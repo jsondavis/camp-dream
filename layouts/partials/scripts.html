@@ -1,0 +1,44 @@
+{{ $jQuery := resources.Get "js/jquery.min.js" }} {{ $scrollex := resources.Get
+"js/jquery.scrollex.min.js" }} {{ $scrolly := resources.Get
+"js/jquery.scrolly.min.js" }} {{ $browser := resources.Get "js/browser.min.js"
+}} {{ $breakpoints := resources.Get "js/breakpoints.min.js" }} {{ $util :=
+resources.Get "js/util.js" }} {{ $main := resources.Get "js/main.js" }} {{ $demo
+:= resources.Get "js/demo.js" }} {{ $js := slice $jQuery $scrollex $scrolly
+$browser $breakpoints $util $main $demo | resources.Concat "js/bundle.js" |
+minify }}
+
+<!-- Scripts -->
+<script src="{{ $js.RelPermalink }}"></script>
+<script tyep="text/javascript">
+  (function (w) {
+    try {
+      var doc = w.document;
+      var cForm = doc.getElementById("contact-form");
+      var responseFrame = doc.getElementById("response-iframe");
+      if (cForm) {
+        cForm.target = "response-iframe";
+        if (responseFrame) {
+          responseFrame.addEventListener("onload", function (e) {
+            console.log(e);
+          });
+        }
+        //       cForm.addEventListener("submit", function (e) {
+        //         e.preventDefault();
+        //         new FormData(cForm);
+        //       });
+        //       cForm.addEventListener("formdata", function (e) {
+        //         var data = e.formData;
+        //         postFormData(e.target.action, data);
+        //       });
+      }
+      //     function postFormData(action, data) {
+      //       var req = new w.XMLHttpRequest();
+      //       req.open("post", action);
+      //       req.send(data);
+      //       console.log(req);
+      //     }
+    } catch (err) {
+      console.error(err);
+    }
+  })(window);
+</script>
