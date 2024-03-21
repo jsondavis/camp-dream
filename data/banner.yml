@@ -2,10 +2,10 @@
 style: "style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
 title: "Camp Dream"
 subtitle: |
-  Use the form linked below to register for Camp Dream at Buckhorn Creek Ranch in Vidalia, GA. See our <a target="_blank" href="./docs/Camp Dream - Brochure.pdf?v=2">brochure</a> for more information about this year's camp. Or contact abcpottery5@gmail.com with any questions.
+  Use the form linked below to register for Camp Dream at Buckhorn Creek Ranch in Vidalia, GA. See our <a target="_blank" href="./docs/Camp Dream Brochure - 2024.pdf?v=2">brochure</a> for more information about this year's camp. Or contact abcpottery5@gmail.com with any questions.
 button:
   label: "Register"
-  link: "https://docs.google.com/forms/d/e/1FAIpQLSd9JgCzQajum5r_BOX8y6tKLh5MiaJzvDvqhQzkMzGU62rFTA/viewform"
+  link: "https://docs.google.com/forms/d/17tMKI23dioDMPLe7ZOYPmuCPP6ICjjsPh9OF-9aiIkU/viewform"
   target: "_blank"
 image:
   src: "images/eric-muhr-yS1t8hzQ-SQ-unsplash.jpg"
